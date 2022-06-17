@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <% if(info.age == null) { %>
+        <h1 style=color:red;text-align:center;> Não foi possivel achar uma idade para esse nome </h1>
+        <% }else{ %>
+        <h1 style=color:green;text-align:center;>A idade para o nome <%= info.name %> é</h1>
+    <h1 style=color:green;text-align:center;> <%= info.age %> </h1>
+    <% } %>
+   <br>
+</body>
+</html>
