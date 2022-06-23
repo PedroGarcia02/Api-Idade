@@ -7,12 +7,16 @@
     <title>API</title>
 </head>
 <body>
-    <% if(info.age == null) { %>
-        <h1 style=color:red;text-align:center;> Não foi possivel achar uma idade para esse nome </h1>
-        <% }else{ %>
-        <h1 style=color:green;text-align:center;>A idade para o nome <%= info.name %> é</h1>
-    <h1 style=color:green;text-align:center;> <%= info.age %> </h1>
-    <% } %>
+        <h1 style=color:grey;text-align:center;>Lista de idade do menor para o maior</h1>
+        <br>
+        <% let c = 0 %>
+        <% while(c < 3) { %>
+        <h1 style=color:green;text-align:center;><%= peoples[c].name %>: <%= peoples[c].age %> </h1>
+        <%c++ } %>
+        <br>
+        <h1 style=color:green;text-align:center;><%= peoples[0].name %> É o mais novo!!</h1>
+
+
    <br>
 </body>
 </html>
